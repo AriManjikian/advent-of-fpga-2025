@@ -1,0 +1,14 @@
+(library
+ (name solution)
+ (public_name advent_of_fpga.solution)
+ (modules safe_dial solver)
+ (libraries hardcaml)
+ (preprocess (pps hardcaml.ppx_hardcaml0))
+)
+
+(executable
+ (name hw_main)
+ (public_name advent_of_fpga.hw)
+ (modules hw_main)
+ (libraries solution hardcaml))
+
