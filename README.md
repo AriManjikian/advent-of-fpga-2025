@@ -26,6 +26,8 @@ let rotate pos dir amount =
   | _ -> pos
 ```
 This function calculates the final position after a rotation, handling wrapping around the 100-position dial.
+
+
 **Part 2 - Click-by-Click Rotation:**
 ```ocaml
 let clicking_rotate pos dir amount =
